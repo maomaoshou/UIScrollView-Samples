@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AB5087E10B7CB9E7AD0E26 /* libPods-LazyLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4465182D2B066F90169107C /* libPods-LazyLoad.a */; };
 		9FE68D551A3C9D0F0077B885 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE68D541A3C9D0F0077B885 /* main.m */; };
 		9FE68D581A3C9D0F0077B885 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE68D571A3C9D0F0077B885 /* AppDelegate.m */; };
 		9FE68D5B1A3C9D0F0077B885 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE68D5A1A3C9D0F0077B885 /* ViewController.m */; };
@@ -14,7 +15,7 @@
 		9FE68D601A3C9D0F0077B885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE68D5F1A3C9D0F0077B885 /* Images.xcassets */; };
 		9FE68D631A3C9D0F0077B885 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE68D611A3C9D0F0077B885 /* LaunchScreen.xib */; };
 		9FE68D6F1A3C9D0F0077B885 /* LazyLoadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE68D6E1A3C9D0F0077B885 /* LazyLoadTests.m */; };
-		E37558481AD6828B9875005A /* libPods-LazyLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 218EE0C1CED9CA2A48FD066A /* libPods-LazyLoad.a */; };
+		BF33BFE7B259BBF1F7E0210C /* libPods-LazyLoadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507BD19619D41C30F46EE2D /* libPods-LazyLoadTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		218EE0C1CED9CA2A48FD066A /* libPods-LazyLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LazyLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B9E3EEF783B5CEAC39A460 /* Pods-LazyLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoad/Pods-LazyLoad.release.xcconfig"; sourceTree = "<group>"; };
+		3036AC75FDCB7C3382B310FE /* Pods-LazyLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoad/Pods-LazyLoad.debug.xcconfig"; sourceTree = "<group>"; };
+		701CDB679361B4F196A90C9A /* Pods-LazyLoadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoadTests/Pods-LazyLoadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8507BD19619D41C30F46EE2D /* libPods-LazyLoadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LazyLoadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE68D4F1A3C9D0F0077B885 /* LazyLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE68D531A3C9D0F0077B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE68D541A3C9D0F0077B885 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,8 +46,8 @@
 		9FE68D681A3C9D0F0077B885 /* LazyLoadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyLoadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE68D6D1A3C9D0F0077B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE68D6E1A3C9D0F0077B885 /* LazyLoadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyLoadTests.m; sourceTree = "<group>"; };
-		BD6111BEBA0715C6354F459C /* Pods-LazyLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoad/Pods-LazyLoad.release.xcconfig"; sourceTree = "<group>"; };
-		BF5008D4D606F584A6C820AD /* Pods-LazyLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoad/Pods-LazyLoad.debug.xcconfig"; sourceTree = "<group>"; };
+		B4465182D2B066F90169107C /* libPods-LazyLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LazyLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBD8E3A41C7EF44F0AA9C90 /* Pods-LazyLoadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyLoadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyLoadTests/Pods-LazyLoadTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37558481AD6828B9875005A /* libPods-LazyLoad.a in Frameworks */,
+				10AB5087E10B7CB9E7AD0E26 /* libPods-LazyLoad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,27 +63,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF33BFE7B259BBF1F7E0210C /* libPods-LazyLoadTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B936629097E84068B350FDB /* Pods */ = {
+		2432621B62425C68BCEB91B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF5008D4D606F584A6C820AD /* Pods-LazyLoad.debug.xcconfig */,
-				BD6111BEBA0715C6354F459C /* Pods-LazyLoad.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4E117128AE01E05BBDC9BEE7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				218EE0C1CED9CA2A48FD066A /* libPods-LazyLoad.a */,
+				B4465182D2B066F90169107C /* libPods-LazyLoad.a */,
+				8507BD19619D41C30F46EE2D /* libPods-LazyLoadTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		306F5F60CB198F92C0AFC368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3036AC75FDCB7C3382B310FE /* Pods-LazyLoad.debug.xcconfig */,
+				07B9E3EEF783B5CEAC39A460 /* Pods-LazyLoad.release.xcconfig */,
+				701CDB679361B4F196A90C9A /* Pods-LazyLoadTests.debug.xcconfig */,
+				DDBD8E3A41C7EF44F0AA9C90 /* Pods-LazyLoadTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9FE68D461A3C9D0F0077B885 = {
@@ -88,8 +96,8 @@
 				9FE68D511A3C9D0F0077B885 /* LazyLoad */,
 				9FE68D6B1A3C9D0F0077B885 /* LazyLoadTests */,
 				9FE68D501A3C9D0F0077B885 /* Products */,
-				1B936629097E84068B350FDB /* Pods */,
-				4E117128AE01E05BBDC9BEE7 /* Frameworks */,
+				306F5F60CB198F92C0AFC368 /* Pods */,
+				2432621B62425C68BCEB91B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FE68D721A3C9D0F0077B885 /* Build configuration list for PBXNativeTarget "LazyLoad" */;
 			buildPhases = (
-				04BBFAECCCF7663314E8EB31 /* Check Pods Manifest.lock */,
+				C618DA3F681A3DC7BEE3FC97 /* [CP] Check Pods Manifest.lock */,
 				9FE68D4B1A3C9D0F0077B885 /* Sources */,
 				9FE68D4C1A3C9D0F0077B885 /* Frameworks */,
 				9FE68D4D1A3C9D0F0077B885 /* Resources */,
-				D8E3A8FFA11BCD6AC04E3240 /* Copy Pods Resources */,
-				B24C89BB2CFA683AF0396D57 /* Embed Pods Frameworks */,
+				0D0DB3AD534A5E19AF23EFD1 /* [CP] Embed Pods Frameworks */,
+				FDCF62AF33C8A72D98F826DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FE68D751A3C9D0F0077B885 /* Build configuration list for PBXNativeTarget "LazyLoadTests" */;
 			buildPhases = (
+				5EED4B4EB62828109CA8C8D9 /* [CP] Check Pods Manifest.lock */,
 				9FE68D641A3C9D0F0077B885 /* Sources */,
 				9FE68D651A3C9D0F0077B885 /* Frameworks */,
 				9FE68D661A3C9D0F0077B885 /* Resources */,
+				288F7A6F00877CC135350FDD /* [CP] Embed Pods Frameworks */,
+				F0997650FAC832B86449F21C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,29 +253,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04BBFAECCCF7663314E8EB31 /* Check Pods Manifest.lock */ = {
+		0D0DB3AD534A5E19AF23EFD1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B24C89BB2CFA683AF0396D57 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,14 +268,74 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyLoad/Pods-LazyLoad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8E3A8FFA11BCD6AC04E3240 /* Copy Pods Resources */ = {
+		288F7A6F00877CC135350FDD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyLoadTests/Pods-LazyLoadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EED4B4EB62828109CA8C8D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C618DA3F681A3DC7BEE3FC97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0997650FAC832B86449F21C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyLoadTests/Pods-LazyLoadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCF62AF33C8A72D98F826DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +472,7 @@
 		};
 		9FE68D731A3C9D0F0077B885 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5008D4D606F584A6C820AD /* Pods-LazyLoad.debug.xcconfig */;
+			baseConfigurationReference = 3036AC75FDCB7C3382B310FE /* Pods-LazyLoad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LazyLoad/Info.plist;
@@ -427,7 +483,7 @@
 		};
 		9FE68D741A3C9D0F0077B885 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6111BEBA0715C6354F459C /* Pods-LazyLoad.release.xcconfig */;
+			baseConfigurationReference = 07B9E3EEF783B5CEAC39A460 /* Pods-LazyLoad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LazyLoad/Info.plist;
@@ -438,6 +494,7 @@
 		};
 		9FE68D761A3C9D0F0077B885 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701CDB679361B4F196A90C9A /* Pods-LazyLoadTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -457,6 +514,7 @@
 		};
 		9FE68D771A3C9D0F0077B885 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDBD8E3A41C7EF44F0AA9C90 /* Pods-LazyLoadTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

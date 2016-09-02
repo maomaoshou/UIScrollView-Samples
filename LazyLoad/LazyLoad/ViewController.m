@@ -164,6 +164,7 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     self.targetRect = nil;
+    //当用户在scrollview停止滑动并且减速过程的中再次滑动scrollview时，加载界面上可见cell的内容。
     [self loadImageForVisibleCells];
 }
 
