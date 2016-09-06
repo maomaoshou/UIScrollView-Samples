@@ -28,7 +28,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
+    //eNSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

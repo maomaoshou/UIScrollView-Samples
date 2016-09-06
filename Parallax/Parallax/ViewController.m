@@ -56,18 +56,22 @@
                         ];
     
     NSInteger pages = MIN(titles.count, contents.count);
-    
+    //使所有约束无效
     [self.contentWidthConstraint autoRemove];
+    //相当于设置self.contentScrollView的contentSize.x为自身width * pages
     self.contentWidthConstraint = [self.contentView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.contentScrollView withMultiplier:pages];
     [self.titleWidthConstraint autoRemove];
     self.titleWidthConstraint = [self.titleContentView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.titleScrollView withMultiplier:pages];
+    //设置当前view需要更新约束，会在下一个新的RunLoop里面自动调用layoutSubviews更新约束
     [self.view setNeedsLayout];
+    //强制在当前RunLoop中更新约束，相当于立即更新约束
     [self.view layoutIfNeeded];
     
     CGFloat titleX = 0.0;
     CGFloat contentX = 0.0;
-    
+    //布局整个scrollView的title和content
     for (int i = 0; i < pages; ++i) {
+        //将pages数量个label加在self.titleContentScrollView上,该label为标题label
         CGRect titleFrame = CGRectMake(titleX + 15.0, 50.0, self.titleScrollView.frame.size.width - 20.0, 50.0);
         UILabel *title = [[UILabel alloc] initWithFrame:titleFrame];
         title.text = titles[i];
@@ -77,7 +81,7 @@
         [title sizeToFit];
         [self.titleContentView addSubview:title];
         titleX += self.titleScrollView.frame.size.width;
-        
+        //将pages数量个label加在self.contentScrollView上，该label为内容label
         CGFloat contentY = title.frame.origin.y + title.frame.size.height + 10.0;
         CGFloat maxHeight = self.titleScrollView.frame.size.height - contentY - 100.0;
         CGRect contentFrame = CGRectMake(contentX + 15.0, contentY, self.titleScrollView.frame.size.width - 20.0, maxHeight);
@@ -102,14 +106,15 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView == self.titleScrollView) {
+    
+    //if (scrollView == self.titleScrollView) {
         CGFloat contentX = self.titleScrollView.contentOffset.x / self.titleScrollView.frame.size.width * self.contentScrollView.frame.size.width;
         self.contentScrollView.contentOffset = CGPointMake(contentX, 0.0);
         CGFloat transX = self.titleScrollView.contentOffset.x / (self.titleScrollView.contentSize.width - self.titleScrollView.frame.size.width) * (self.backgroundImage.frame.size.width - self.view.frame.size.width);
         transX = MAX(0.0, transX);
         transX = MIN(self.backgroundImage.frame.size.width - self.view.frame.size.width, transX);
         self.backgroundImage.transform = CGAffineTransformMakeTranslation(-transX, 0.0);
-    }
+    //}
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
